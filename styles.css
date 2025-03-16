@@ -26,7 +26,6 @@ nav ul {
     margin: 0;
     padding: 0;
     font-size: 24px;
-
     display: flex;
 }
 
@@ -71,8 +70,8 @@ nav ul li a:hover {
 
 .btn {
     padding: 10px 20px;
-    background-color: #ff6600;
-    color: #fff;
+    background-color: #FFFFFF;
+    color:#FFF;
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
@@ -95,8 +94,8 @@ nav ul li a:hover {
 .game-container {
     display: flex;
     justify-content: center;
-  align-items:center;
-    text-align:center;
+    align-items: center;
+    text-align: center;
 }
 
 .game-card {
@@ -120,6 +119,21 @@ nav ul li a:hover {
 .game-card p {
     font-size: 16px;
     color: #ccc;
+}
+.download-btn:hover {
+    background-color:	#FF4D00; /* Change color on hover */
+    cursor: pointer; /* Add pointer cursor */
+}
+
+/* Download Button Styles */
+.download-btn {
+    background-color: orange; /* Set background color to orange */
+    color: white; /* Set text color to white for better contrast */
+    padding: 10px 20px; /* Add padding for better appearance */
+    display: inline-block; /* Make it look like a button */
+    border-radius: 5px; /* Add rounded corners */
+    text-align: center; /* Center the text */
+    text-decoration: none; /* Remove underline */
 }
 
 .contact form {
