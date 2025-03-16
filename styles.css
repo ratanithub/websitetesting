@@ -95,8 +95,8 @@ nav ul li a:hover {
 .game-container {
     display: flex;
     justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
+  align-items:center;
+    text-align:center;
 }
 
 .game-card {
