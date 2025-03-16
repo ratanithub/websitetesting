@@ -70,11 +70,13 @@ nav ul li a:hover {
 
 .btn {
     padding: 10px 20px;
-    background-color: #FFFFFF;
-    color:#FFF;
+    background-color: #ff6600;
+    color: #fff;
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
+
+
 }
 
 .btn:hover {
