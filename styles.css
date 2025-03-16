@@ -86,9 +86,28 @@ nav ul li a:hover {
 .about, .games, .contact {
     padding: 60px 20px;
     text-align: center;
+} 
+.social-icons {
+    text-align: center;
+    margin-top: 10px;
 }
 
-.about h2, .games h2, .contact h2 {
+.social-icons {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin: 0 10px;
+    color: #fff;
+    font-size: 24px;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    color: #f4b400;
+}.about h2, .games h2, .contact h2 {
     font-size: 36px;
     margin-bottom: 20px;
 }
