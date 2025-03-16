@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,11 +16,12 @@
             background-color: #f4f4f4;
         }
         .image-container {
-            max-width: 90%;
-            max-height: 90vh;
             display: flex;
             justify-content: center;
             align-items: center;
+            gap: 20px; /* Space between images */
+            max-width: 90%;
+            max-height: 90vh;
         }
         img {
             max-width: 100%;
@@ -26,11 +29,20 @@
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
+
+        /* Responsive layout for mobile */
+        @media (max-width: 768px) {
+            .image-container {
+                flex-direction: column; /* Stack images vertically on mobile */
+                gap: 10px; /* Reduce space between images */
+            }
+        }
     </style>
 </head>
 <body>
     <div class="image-container">
         <img src="image/game1.jpg" alt="Game 1">
+        <img src="image/game2.jpg" alt="Game 2">
     </div>
 </body>
 </html>
