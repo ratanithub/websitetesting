@@ -1,48 +1,76 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image Viewer</title>
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #f4f4f4;
-        }
-        .image-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 20px; /* Space between images */
-            max-width: 90%;
-            max-height: 90vh;
-        }
-        img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-
-        /* Responsive layout for mobile */
-        @media (max-width: 768px) {
-            .image-container {
-                flex-direction: column; /* Stack images vertically on mobile */
-                gap: 10px; /* Reduce space between images */
-            }
-        }
-    </style>
+    <title>Ratanithub Gaming Company</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Correct path to CSS -->
 </head>
 <body>
-    <div class="image-container">
-        <img src="image/game1.jpg" alt="Game 1">
-        <img src="image/game2.jpg" alt="Game 2">
-    </div>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <h1>Ratanithub Gaming</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#games">Games</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Welcome to Ratanithub Gaming</h2>
+            <p>Experience the future of gaming with us.</p>
+            <a href="#games" class="btn">Explore Games</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>Ratanithub Gaming is a leading game development company dedicated to creating immersive and engaging gaming experiences. Our team of talented developers and designers work tirelessly to bring you the best in gaming innovation.</p>
+    </section>
+
+    <!-- Games Section -->
+    <section id="games" class="games">
+        <h2>Our Games</h2>
+        <div class="game-container">
+            <div class="game-card">
+                <img src="images/game1.jpg" alt="Game 1"> <!-- Correct image path -->
+                <h3>Game 1</h3>
+                <p>An exciting adventure game that takes you to new worlds.</p>
+            </div>
+            <div class="game-card">
+                <img src="images/game2.jpg" alt="Game 2"> <!-- Correct image path -->
+                <h3>Game 2</h3>
+                <p>A thrilling action game that keeps you on the edge of your seat.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 Ratanithub Gaming Company. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script> <!-- Correct path to JavaScript -->
 </body>
 </html>
